@@ -1,0 +1,11 @@
+:root {
+    --white: white;
+    --black: black;
+}
+body {
+    margin: 0px;
+    width: 100vw;
+    max-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+}

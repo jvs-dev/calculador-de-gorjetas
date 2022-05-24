@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de gorjetas</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/reset.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__tittle">CALCULADORA DE GORJETAS</h1>
+    </header>
+    <main class="main">
+        <form action="" class="main__form">
+            <label for="" class="form__label">
+                <p>Qanto ficou a conta?</p>
+                R$<input type="number" id="bill" class="form__input input--bill" placeholder="0.00" min="0">
+            </label>
+            <label for="" class="form__label">
+                <p>Como foi seu serviço?</p>
+                <select name="taxa" id="rate" class="form__select">
+                    <option value="30">30% - Incrivel</option>
+                    <option value="20">20% - Bom</option>
+                    <option value="10">10% - Medio</option>
+                    <option value="0">0% - Pessimo</option>
+                </select>
+            </label>
+            <label for="" class="form__label">
+                <p>Quantas pessoas vão dividir a conta?</p>
+                <input type="number" id="persons" class="form__input input--personnumber" placeholder="0" min="0">Pessoas
+            </label>
+            <div class="flex-center">
+                <p id="calculate" class="form__button">CALCULAR!</p>
+            </div>
+        </form>
+        <p class="main__text text--result">Gorjeta total: R$<input class="main__input input--tip" id="tip" type="number" placeholder="0.00" disabled><br>cada</p>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
